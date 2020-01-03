@@ -62,8 +62,8 @@ interface GameState {
 }
 
 class Game extends React.Component<{}, GameState> {
-    constructor() {
-        super({});
+    constructor(props: {}) {
+        super(props);
         this.state = {
             history: [{
                 squares: Array<SquareType>(9).fill(null)
